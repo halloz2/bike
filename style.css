@@ -6,8 +6,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #333;
+  background: #1a1a1a;
+  color: #e0e0e0;
   line-height: 1.6;
 }
 
@@ -42,7 +42,7 @@ main {
 }
 
 .hero {
-  background: white;
+  background: #2a2a2a;
   text-align: center;
   padding: 50px 20px;
   border-radius: 10px;
@@ -59,7 +59,7 @@ main {
 }
 
 button {
-  background: #007bff;
+  background: #0084d6;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -68,7 +68,7 @@ button {
 }
 
 button:hover {
-  background: #0056b3;
+  background: #0065b0;
 }
 
 .cards {
@@ -77,7 +77,7 @@ button:hover {
 }
 
 .card {
-  background: white;
+  background: #2a2a2a;
   padding: 25px;
   border-radius: 10px;
   flex: 1;
