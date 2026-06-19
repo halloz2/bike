@@ -3,130 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crypto Wallet Knowledgebase</title>
+  <title>Crypto Wallet Help Center</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <h1>Crypto Wallet Knowledgebase</h1>
-    <p>Friendly help for secure wallet setup, recovery, and everyday crypto use.</p>
+<body class="kb-page">
+  <header class="kb-header">
+    <div class="kb-brand">
+      <a href="index.html">Crypto Wallet</a>
+      <span>Help Center</span>
+    </div>
+    <nav class="kb-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a class="active" href="knowledgebase.html">Help Center</a>
+      <a href="#categories">Categories</a>
+      <a href="#articles">Popular articles</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="knowledgebase.html">Knowledgebase</a>
-    <a href="#articles">Articles</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
   <main>
-    <section class="hero kb-hero">
-      <div class="hero-copy">
-        <span class="eyebrow">Crypto Wallet Help</span>
-        <h2>Search wallet articles, categories, and content.</h2>
-        <p>Get quick answers on wallet security, recovery, gas fees, and transaction tracking.</p>
+    <section class="kb-hero">
+      <div class="kb-hero-content">
+        <p class="eyebrow">Support for wallet users</p>
+        <h1>Find answers on wallet security, recovery, and transactions.</h1>
+        <p>Search our guides and support articles designed to help you use your crypto wallet safely and confidently.</p>
+        <div class="search-hero">
+          <input id="search" type="search" placeholder="Search articles, categories, or keywords..." />
+        </div>
       </div>
     </section>
 
-    <section class="search-panel">
-      <div class="search-field">
-        <label for="search">Search knowledgebase</label>
-        <input id="search" type="search" placeholder="Search articles, category or content..." />
+    <section class="kb-widgets" id="categories">
+      <div class="widget-card">
+        <h2>Browse by category</h2>
+        <div class="category-grid">
+          <div class="category-card">
+            <span>🔒</span>
+            <h4>Security</h4>
+            <p>Secure your wallet, protect your keys, and avoid scams.</p>
+          </div>
+          <div class="category-card">
+            <span>⚡</span>
+            <h4>Transactions</h4>
+            <p>Learn how gas fees work, send funds, and verify transfers.</p>
+          </div>
+          <div class="category-card">
+            <span>🛠️</span>
+            <h4>Setup</h4>
+            <p>Install your wallet, create an account, and save backups.</p>
+          </div>
+          <div class="category-card">
+            <span>🧳</span>
+            <h4>Wallet types</h4>
+            <p>Choose between hardware, mobile, and browser wallets.</p>
+          </div>
+        </div>
       </div>
-      <div class="filter-list" role="tablist" aria-label="Article categories">
-        <button class="filter active" data-category="all">All</button>
-        <button class="filter" data-category="security">Security</button>
-        <button class="filter" data-category="setup">Setup</button>
-        <button class="filter" data-category="transactions">Transactions</button>
-        <button class="filter" data-category="wallets">Wallets</button>
+
+      <div class="widget-card">
+        <h2>Need help fast?</h2>
+        <p>Start from one of the most common topics below or use the search bar to jump to the article you need.</p>
+        <ul class="shortcut-list">
+          <li><a href="#" class="shortcut-link">Recover a lost wallet</a></li>
+          <li><a href="#" class="shortcut-link">Understand gas fees</a></li>
+          <li><a href="#" class="shortcut-link">Protect against scams</a></li>
+          <li><a href="#" class="shortcut-link">Find the best wallet type</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-header">
+      <div>
+        <h2>Popular help articles</h2>
+        <p>Browse the top wallet guides that users visit most often.</p>
       </div>
     </section>
 
     <section class="article-list" id="articles">
       <article class="article-card" data-category="security" data-keywords="seed phrase backup recovery private key phishing">
-        <div class="article-label">Security</div>
         <h3>Protect your seed phrase</h3>
         <p>Learn the safest way to store your recovery phrase, avoid digital copies, and keep your crypto secure.</p>
-        <div class="article-meta">Category: Security</div>
+        <div class="article-meta">Security</div>
       </article>
 
       <article class="article-card" data-category="setup" data-keywords="wallet setup install connect address">
-        <div class="article-label">Setup</div>
         <h3>Set up your first wallet</h3>
         <p>Step-by-step guidance for creating a new wallet, setting a strong password, and saving your backup.</p>
-        <div class="article-meta">Category: Setup</div>
+        <div class="article-meta">Setup</div>
       </article>
 
       <article class="article-card" data-category="transactions" data-keywords="gas fees send receive transaction history confirmations">
-        <div class="article-label">Transactions</div>
         <h3>Understanding gas fees</h3>
         <p>Find out how gas fees work, when to choose faster processing, and how to save on network costs.</p>
-        <div class="article-meta">Category: Transactions</div>
+        <div class="article-meta">Transactions</div>
       </article>
 
       <article class="article-card" data-category="wallets" data-keywords="hardware mobile browser extension cold wallet hot wallet">
-        <div class="article-label">Wallets</div>
         <h3>Choose the right wallet type</h3>
         <p>Compare hardware, mobile, and browser wallets to find the best fit for your crypto habits.</p>
-        <div class="article-meta">Category: Wallets</div>
+        <div class="article-meta">Wallet types</div>
       </article>
 
       <article class="article-card" data-category="security" data-keywords="phishing scam address verify transaction fake site">
-        <div class="article-label">Security</div>
         <h3>Spot phishing and scams</h3>
         <p>Recognize fake sites, suspicious links, and common wallet scams so you can stay safe online.</p>
-        <div class="article-meta">Category: Security</div>
+        <div class="article-meta">Security</div>
       </article>
 
       <article class="article-card" data-category="transactions" data-keywords="transaction tracking explorer balance status confirmed pending">
-        <div class="article-label">Transactions</div>
         <h3>Track and verify transactions</h3>
         <p>Use block explorers to confirm transfers, review transaction status, and understand wallet history.</p>
-        <div class="article-meta">Category: Transactions</div>
+        <div class="article-meta">Transactions</div>
       </article>
     </section>
 
     <section class="contact-card" id="contact">
-      <h3>Need more help?</h3>
-      <p>If you still have questions, reach out to support or explore more wallet guides in the community.</p>
+      <h3>Can’t find what you need?</h3>
+      <p>If you still have questions, our support team is ready to help you with wallet setup, security, or recovery.</p>
       <a href="#" class="button">Contact Support</a>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Crypto Wallet Knowledgebase. Built to make crypto easy and safe.</p>
+    <p>&copy; 2026 Crypto Wallet Help Center</p>
   </footer>
 
   <script>
     const searchInput = document.getElementById('search');
-    const filters = document.querySelectorAll('.filter');
     const cards = document.querySelectorAll('.article-card');
 
     function updateResults() {
       const query = searchInput.value.trim().toLowerCase();
-      const activeCategory = document.querySelector('.filter.active').dataset.category;
 
       cards.forEach(card => {
         const title = card.querySelector('h3').textContent.toLowerCase();
         const content = card.querySelector('p').textContent.toLowerCase();
-        const category = card.dataset.category;
-        const keywords = card.dataset.keywords.toLowerCase();
+        const category = card.dataset.category || '';
+        const keywords = card.dataset.keywords?.toLowerCase() || '';
 
         const matchesQuery = query === '' || title.includes(query) || content.includes(query) || keywords.includes(query) || category.includes(query);
-        const matchesCategory = activeCategory === 'all' || category === activeCategory;
-
-        card.style.display = matchesQuery && matchesCategory ? 'grid' : 'none';
+        card.style.display = matchesQuery ? 'grid' : 'none';
       });
     }
 
     searchInput.addEventListener('input', updateResults);
-    filters.forEach(button => {
-      button.addEventListener('click', () => {
-        filters.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-        updateResults();
-      });
-    });
   </script>
 </body>
 </html>
